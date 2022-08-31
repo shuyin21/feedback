@@ -64,7 +64,7 @@ export const FeedbackProvider = ({ children }) => {
     // Update Feedback Item
     const updateFeedback = async (id, updItem) => {
 
-        const response = await fetch(`/feedback/${id}`, {
+        const response = await fetch(`https://feedback-shuyin.herokuapp.com/feedback/${id}`, {
             method: 'PUT', headers: {
                 'Content-Type': 'application/json',
 
