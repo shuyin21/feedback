@@ -30,7 +30,7 @@ export const FeedbackProvider = ({ children }) => {
     // delete feedback
     const deleteFeedback = async (id) => {
         if (window.confirm('Are you sure you want to delete?')) {
-            await fetch(`/feedback/${id}`, { method: 'DELETE' })
+            await fetch(`https://feedback-shuyin.herokuapp.com/feedback/${id}`, { method: 'DELETE' })
 
 
 
