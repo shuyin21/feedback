@@ -42,7 +42,7 @@ export const FeedbackProvider = ({ children }) => {
     }
     // add feedback
     const addFeedback = async (newFeedback) => {
-        const response = await fetch('/feedback', {
+        const response = await fetch('https://feedback-shuyin.herokuapp.com/feedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
